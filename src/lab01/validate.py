@@ -1,4 +1,4 @@
-# validate.py
+
 import re
 
 def validate_hostname(hostname):
