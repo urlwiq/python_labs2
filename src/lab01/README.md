@@ -72,13 +72,6 @@
 
 **Два сервера считаются равными, если совпадает их IP-адрес.**
 
-```python
-def __eq__(self, other):
-    if not isinstance(other, Server):
-        return False
-    return self._ip_address == other._ip_address
-```
-
 ## Вопрос 5. Есть ли состояние?
 
 **Да, у сервера есть три состояния:**
