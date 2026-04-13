@@ -1,12 +1,19 @@
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from lab03.base import Server
+
+
 class ServerCollection:
     def __init__(self, name="Infrastructure"):
         self._name = name
         self._items = []
     
     def add(self, server):
-        # Проверяем наличие метода hostname (duck typing)
-        if not hasattr(server, 'hostname') or not hasattr(server, 'ip_address'):
-            raise TypeError(f"Объект должен иметь атрибуты hostname и ip_address")
+        if not isinstance(server, Server):
+            raise TypeError(f"Можно добавлять только объекты Server, получен {type(server).__name__}")
         for existing in self._items:
             if existing.ip_address == server.ip_address:
                 raise ValueError(f"Сервер с IP '{server.ip_address}' уже существует")
