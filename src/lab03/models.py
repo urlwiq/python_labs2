@@ -1,4 +1,4 @@
-from base import Server
+from lab03.base import Server
 
 
 class WebServer(Server):
