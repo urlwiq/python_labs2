@@ -1,6 +1,6 @@
 
 from model import Server
-from collection import ServerCollection
+from lab03.collection import ServerCollection
 
 
 def scenario_1_basic_operations():

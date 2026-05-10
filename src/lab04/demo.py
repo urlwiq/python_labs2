@@ -4,7 +4,7 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from lab03.base import Server
-from lab02.collection import ServerCollection
+from lab03.collection import ServerCollection
 from lab04.models import WebServer, DatabaseServer, FileServer
 from lab04.interfaces import IManageable, IMonitorable, IComparable, IPrintable
 
