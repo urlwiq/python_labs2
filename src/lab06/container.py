@@ -75,6 +75,8 @@ class TypedCollection(Generic[T]):
     
     def map(self, transform: Callable[[T], R]) -> list[R]:
         return [transform(item) for item in self._items]
+    def __str__(self) -> str:
+        return f"TypedCollection({len(self._items)} элементов)"
 
 class Displayable(Protocol):
     def display(self) -> str:
