@@ -81,8 +81,13 @@
 ### Сценарий 6: InvalidInputError
 
 Ввод букв вместо цифр при выборе пункта меню.
-[im05.png](/images/lab07/im05.png)
 
+![im05.png](/images/lab07/im05.png)
+### Сценарий 7: DuplicateItemError
+
+Попытка добавить сервер с IP-адресом, который уже существует в коллекции.
+
+![im07.png](/images/lab07/im07.png)
 ### ⭐ Asciinema-запись
 
 [![asciinema](https://asciinema.org/a/iNI3mD58mO7PSqEx.svg)](https://asciinema.org/a/iNI3mD58mO7PSqEx)
